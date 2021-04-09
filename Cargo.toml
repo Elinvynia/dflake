@@ -1,0 +1,19 @@
+[package]
+name = "dflake"
+description = "A simple Discord snowflake parsing library."
+documentation = "https://docs.rs/dflake"
+homepage = "https://github.com/Elinvynia/dflake"
+repository = "https://github.com/Elinvynia/dflake.git"
+keywords = ["snowflake", "discord"]
+authors = ["Elinvynia <59487684+Elinvynia@users.noreply.github.com>"]
+readme = "README.md"
+license = "MIT/Apache-2.0"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+chrono = { version = "0.4", optional = true }
+
+[features]
+default = []
+chrono_support = ["chrono"]
